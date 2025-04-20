@@ -1,0 +1,13 @@
+[Unit]
+Description=Worker Activity Monitor Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/user/start_worker_activity_monitor
+ExecStart=/home/user/anaconda3/envs/human/bin/python worker_activity_monitor.py
+Restart=always
+User=pi
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=multi-user.target
