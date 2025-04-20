@@ -6,14 +6,14 @@ This is a vision-based AI system that detects if a worker is actively engaged in
 Goal: All dependency install.
 
 🔹Steps:
-Install Python 3.8+
+Install Python 3.9+
 
-Create a virtual environment (optional but preferred)
-
+##Create a virtual environment (optional but preferred)
+```bash
 python -m venv worker_env
 source worker_env/bin/activate  # Windows: worker_env\Scripts\activate
-🔹Install Required Libraries
-
+##Install Required Libraries
+```bash
 pip install opencv-python numpy torch torchvision onnx onnxruntime
 (If optimizing: also install tflite-runtime or tensorrt later)
 
